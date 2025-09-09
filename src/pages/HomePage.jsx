@@ -372,13 +372,7 @@ export default function HomePage() {
                         </ul>
                       )}
                     </div>
-                    <button
-                      type="button"
-                      onClick={() => handleSwapFromTo(index)}
-                      className="col-span-1 p-2 rounded-full bg-cyan-600/50 hover:bg-cyan-700/50 dark:bg-cyan-700/50 dark:hover:bg-cyan-800/50 text-white dark:text-gray-200 transition"
-                    >
-                      <FaExchangeAlt />
-                    </button>
+                    
                     <div className="col-span-2 relative" ref={(el) => (toInputRefs.current[index] = el)}>
                       <input
                         type="text"
@@ -442,13 +436,15 @@ export default function HomePage() {
                       </ul>
                     )}
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => handleSwapFromTo(0)}
-                    className="col-span-1 p-2 rounded-full bg-cyan-600/50 hover:bg-cyan-700/50 dark:bg-cyan-700/50 dark:hover:bg-cyan-800/50 text-white dark:text-gray-200 transition"
-                  >
-                    <FaExchangeAlt />
-                  </button>
+                  <div>
+                      <button
+                      type="button"
+                      onClick={() => handleSwapFromTo(index)}
+                      className="col-span-1 p-2 rounded-full bg-cyan-600/50 hover:bg-cyan-700/50 dark:bg-cyan-700/50 dark:hover:bg-cyan-800/50 text-white dark:text-gray-200 transition"
+                    >
+                      <FaExchangeAlt />
+                    </button>
+                    </div>
                   <div className="col-span-2 relative" ref={(el) => (toInputRefs.current[0] = el)}>
                     <input
                       type="text"

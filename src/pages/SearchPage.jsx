@@ -332,13 +332,15 @@ export default function SearchPage() {
                     )}
                     {errors[`from${index}`] && <p className="text-red-600 dark:text-red-400 text-sm mt-1">{errors[`from${index}`]}</p>}
                   </div>
-                  <button
+                  <div>
+                    <button
                     type="button"
                     onClick={() => handleSwapFromTo(index)}
                     className="col-span-1 p-2 rounded-full bg-indigo-600/50 dark:bg-indigo-700/50 text-white dark:text-gray-200 hover:bg-indigo-700/50 dark:hover:bg-indigo-600/50 transition"
                   >
                     <FaExchangeAlt />
                   </button>
+                  </div>
                   <div className="col-span-2 relative" ref={(el) => (toInputRefs.current[index] = el)}>
                     <div className="flex items-center border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700">
                       <FaPlaneArrival className="text-indigo-600 dark:text-indigo-400 ml-3" />
@@ -416,13 +418,15 @@ export default function SearchPage() {
                   )}
                   {errors.from0 && <p className="text-red-600 dark:text-red-400 text-sm mt-1">{errors.from0}</p>}
                 </div>
-                <button
-                  type="button"
-                  onClick={() => handleSwapFromTo(0)}
-                  className="col-span-1 p-2 rounded-full bg-indigo-600/50 dark:bg-indigo-700/50 text-white dark:text-gray-200 hover:bg-indigo-700/50 dark:hover:bg-indigo-600/50 transition"
-                >
-                  <FaExchangeAlt />
-                </button>
+                <div className="flex justify-center">
+                    <button
+                    type="button"
+                    onClick={() => handleSwapFromTo(index)}
+                    className="col-span-1 p-2 rounded-full bg-indigo-600/50 dark:bg-indigo-700/50 text-white dark:text-gray-200 hover:bg-indigo-700/50 dark:hover:bg-indigo-600/50 transition"
+                  >
+                    <FaExchangeAlt />
+                  </button>
+                  </div>
                 <div className="col-span-2 relative" ref={(el) => (toInputRefs.current[0] = el)}>
                   <div className="flex items-center border border-gray-300 dark:border-gray-600 rounded-lg bg-gray-100 dark:bg-gray-700">
                     <FaPlaneArrival className="text-indigo-600 dark:text-indigo-400 ml-3" />

@@ -1,4 +1,3 @@
-// src/components/LiveMap.jsx
 import { useMemo } from "react";
 import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
 import L from "leaflet";

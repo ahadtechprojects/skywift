@@ -1,4 +1,3 @@
-// src/components/SearchForm.jsx
 import { useState } from "react";
 import { useSearch } from "../context/SearchContext";
 import { airports } from "../data/airport";

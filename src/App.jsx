@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/NavBar";
+import Footer from "./components/Footer"
 import Home from "./pages/HomePage";
 import SearchResults from "./pages/SearchResult";
 import FlightDetails from "./pages/FlightDetails";
@@ -33,11 +34,7 @@ function PublicLayout() {
           <Route path="*" element={<div className="text-center mt-10 text-gray-800 dark:text-gray-200">Page not found</div>} />
         </Routes>
       </main>
-      <footer className="border-t bg-white dark:bg-gray-800 dark:border-gray-700">
-        <div className="max-w-6xl mx-auto px-4 py-6 text-sm text-gray-500 dark:text-gray-300">
-          © {new Date().getFullYear()} SkySwift
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

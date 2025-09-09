@@ -1,4 +1,3 @@
-// src/components/DownloadFlightsButton.jsx
 import React, { useState } from "react";
 import { downloadFlightsCSV } from "../data/flights";
 

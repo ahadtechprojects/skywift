@@ -1,4 +1,3 @@
-// src/pages/FlightsPage.jsx
 import React, { useEffect, useState } from "react";
 import { getAllFlights } from "../stores/flightStore";
 import { auth } from "../firebase";
